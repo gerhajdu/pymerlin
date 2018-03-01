@@ -49,13 +49,6 @@ except:
     print "Error reading datafile; check format"
     exit()
 
-#print names
-#print periods
-#print Us
-
-#print mean
-#print scale
-
 def return_harmonic_amplitude(coefs2):
     return np.sqrt(coefs2[0]**2 + coefs2[1]**2)
 
@@ -85,9 +78,6 @@ for i in xrange(names.size):
     phi31 = (phi31-np.pi) % (2*np.pi) + np.pi
 
     X     = ((np.asarray((periods[i],A1,A2,A3,phi21,phi31))-mean)/scale).reshape(1,-1)
-
-    #print '{:4s} {:4f} {:4f} {:4f} {:4f} {:4f}'.format(names[i], A1, A2, A3, phi21, phi31)
-    #print X
 
     preds = np.zeros(len(clfs))
     for j in xrange(len(clfs)):
