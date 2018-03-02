@@ -6,24 +6,24 @@ from sys import argv, exit
 from os import path
 
 try:
-    npzfile = np.load(path.dirname(__file__)+'/coefs_pca.npz')
+    npzfile = np.load(path.dirname(__file__)+'/pymerlin_coefs.npz')
     harmonic_coef_k = npzfile['k']
 except:
-    print "Coefficient file not found"
+    print "pymerlin_coefs.npz not found"
     exit()
 
 try:
-    clfs = pickle.load( open( path.dirname(__file__)+"/pymerlin-regressors.pkl", "rb" ))
+    clfs = pickle.load( open( path.dirname(__file__)+"/pymerlin_regressors.pkl", "rb" ))
 except:
-    print "pymerlin-regressors.pkl not found!"
+    print "pymerlin_regressors.pkl not found!"
     exit()
 
 try:
-    npzfile = np.load(path.dirname(__file__)+'/scaler_params.npz')
+    npzfile = np.load(path.dirname(__file__)+'/pymerlin_scaler_params.npz')
     scale   = npzfile['scale']
     mean    = npzfile['mean']
 except:
-    print "scaler_params.npz file not found"
+    print "pymerlin_scaler_params.npz not found"
     exit()
 
 try:
