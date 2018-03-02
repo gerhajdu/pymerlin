@@ -10,8 +10,7 @@ This routine was developed for:
 
 ## Installation
 
-Copy the files `pymerlin`, `pymerlin.py`, `coefs_pca.npz`, `scaler_params.npz` and `pymerlin-regressors.pkl`
-to the same directory in the system PATH
+Copy all files from the `bin` directory to the same directory in the system PATH
 
 ## Usage
 
