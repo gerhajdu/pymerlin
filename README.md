@@ -2,7 +2,7 @@
 
 This routine estimates the iron abundance of RR Lyrae variables from their K-band light curve parameters,
 as determined by the PyFiNeR routine (https://github.com/gerhajdu/pyfiner). These estimates are described
-in detail in Hajdu et al. (2018).
+in detail in [Hajdu et al. (2018)](https://arxiv.org/abs/1804.01456).
 
 This routine was developed for:
 - `Python` 2.7+ or 3.6+
@@ -24,7 +24,8 @@ where the first six columns should be:
 
 Given these data, the code calculates the Fourier parameters used during the regression, imports
 the regressors from the attached pickle file, and calculates the abundance estimates on both the
-Jurcsik (1995) and the Carretta et al. (2009) metallicity scales, as described in Hajdu et al. (2018).
+Jurcsik (1995) and the Carretta et al. (2009) metallicity scales, as described in
+[Hajdu et al. (2018)](https://arxiv.org/abs/1804.01456).
 
 The output produced by the routine is:
 - NAME: the name of the variable
