@@ -5,12 +5,14 @@ as determined by the PyFiNeR routine (https://github.com/gerhajdu/pyfiner). Thes
 in detail in Hajdu et al. (2018).
 
 This routine was developed for:
-- `Python` 2.7
-- `Numpy` 1.12
+- `Python` 2.7+ or 3.6+
+- `Numpy` 1.12+
 
 ## Installation
 
-Copy all files from the `bin` directory to the same directory in the system PATH
+Copy all files from the `bin` directory to the same directory in the system PATH.
+If you get "ImportError: No module named builtins" error while using Python 2.7,
+install the `future` package.
 
 ## Usage
 
