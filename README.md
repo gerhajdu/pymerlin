@@ -7,12 +7,17 @@ in detail in [Hajdu et al. (2018)](https://arxiv.org/abs/1804.01456).
 This routine was developed for:
 - `Python` 2.7+ or 3.6+
 - `Numpy` 1.12+
+- `Scikit-learn` 0.19.1
 
 ## Installation
 
 Copy all files from the `bin` directory to the same directory in the system PATH.
 If you get "ImportError: No module named builtins" error while using Python 2.7,
 install the `future` package.
+Note that the code relies on loading a pre-trained regressor object, which might
+not load if using a `Sklearn` version other than 0.19.1. It is recommended to run
+this code from a virtual environment with `python`==3.6, `numpy`==1.12 and
+`scikit-learn`==0.19.1 .
 
 ## Usage
 
